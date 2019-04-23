@@ -23,3 +23,11 @@ Clean up temporary files using:
 ```
 $ latexmk -c
 ```
+
+## Paper metadata
+
+**IMPORTANT**
+Some information for building the document (such as the title and keywords)
+is provided through the `paper.yml` file and not through the usual `\title`
+command. Respecting the process is important to avoid build errors when
+submitting your work.
