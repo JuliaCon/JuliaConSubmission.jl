@@ -33,3 +33,8 @@ Some information for building the document (such as the title and keywords)
 is provided through the `paper.yml` file and not through the usual `\title`
 command. Respecting the process is important to avoid build errors when
 submitting your work.
+
+## Get from OverLeaf
+
+The paper folder can be downloaded from [OverLeaf](https://www.overleaf.com/read/dqjbrhqxjpwq).
+The build process has been tested on the platform for users who cannot build it locally.
