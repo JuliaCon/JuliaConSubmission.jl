@@ -1,5 +1,7 @@
 # JuliaConSubmission
 
+[![Build Status](https://travis-ci.org/matbesancon/JuliaConSubmission.jl.svg?branch=master)](https://travis-ci.org/matbesancon/JuliaConSubmission.jl)
+
 This repository is an example for a proceeding submission at JuliaCon 2019.
 Feel free to use the template in `/paper` to prepare yours.
 For more information, go to the [proceedings website](https://proceedings.juliacon.org).
