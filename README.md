@@ -11,7 +11,6 @@ For more information, go to the [proceedings website](https://proceedings.juliac
 The document can be built locally, the following dependencies need to be
 installed:
 - Ruby
-- [bibtex-ruby](https://github.com/inukshuk/bibtex-ruby), installed with `[sudo] gem install bibtex-ruby`
 - latexmk
 
 ## Build process
