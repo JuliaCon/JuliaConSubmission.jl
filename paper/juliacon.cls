@@ -822,7 +822,7 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 %\def\@evenfoot{\@runningfoot\hfill\hbox{} \thepage }
 %\def\firstfootsize{\@setsize\firstfootsize{9pt}\vipt\@vipt}
 \def\ps@titlepage{\let\@mkboth\@gobbletwo
-\def\@oddhead{\fontsize{9}{12} \rm {\hskip 19pt\itshape\headingtable}}\def\@oddfoot{\hbox{}\hfill\fontsize{9}{12}\@firstfoot}%
+\def\@oddhead{\fontsize{9}{12} \rm {\hskip 19pt\itshape}}\def\@oddfoot{\hbox{}\hfill\fontsize{9}{12}\@firstfoot}%
 \def\@evenhead{}\def\@evenfoot{\firstfootsize\@firstfoot\hfill\hbox{}}}
 %
 \def\@listI{\leftmargin\leftmargini
