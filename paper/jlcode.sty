@@ -391,9 +391,15 @@ morestring=[s]{L"}{"},%
 
 
 % basic font
-\def\lstbasicfont{\color{jlstring}\ttfamily\scriptsize\selectfont}
+\makeatletter
+\def\lstbasicfont{%
+    \color{jlstring}%
+    \ttfamily%
+	\lst@ifdisplaystyle\scriptsize\fi%
+}
+\makeatother
 
-% gerneral style of the code block
+% general style of the code block
 \lstset{basicstyle={\lstbasicfont}}
 \lstset{showstringspaces=false}
 \lstset{upquote=true}
