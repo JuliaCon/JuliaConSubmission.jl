@@ -698,9 +698,11 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 %
 \def\@maketitle{\newpage \thispagestyle{titlepage}\par
  \begingroup \lineskip = \z@\null
+ \vspace{-1.75em}
  \begin{picture}(5,5)
 	\includegraphics[width=1in]{logojuliacon.pdf}
  \end{picture}
+ \vspace{1.75em}
  \vskip -7pt\relax %-18.5pt
  \parindent\z@ \LARGE {\centering \hyphenpenalty\@M
   {\titlefont \@title} \par
@@ -737,10 +739,11 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 \def\terms#1{\setbox\@terms=\vbox{\hsize20pc%
  \footnotesize%
 \parindent 0pt \noindent
- { \section*{General Terms}} \ignorespaces #1}}
+ {	 \section*{General Terms}} \ignorespaces #1}}
 \def\keywords#1{\gdef\@keywords{\hsize20pc%
 \parindent 0pt\noindent\ignorespaces%
- { \section*{Keywords} } \ignorespaces #1}
+ {\vspace{-1em}%
+ 	 \section*{Keywords} } \ignorespaces #1{\vspace{1em}}}
 }
 
 \def\category#1#2#3{\@ifnextchar
