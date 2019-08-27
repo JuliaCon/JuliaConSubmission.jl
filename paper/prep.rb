@@ -30,6 +30,16 @@ open('header.tex', 'w') do |f|
   end
   f << metadata["keywords"].last
   f << "}\n\n"
+
+	# hypersetup
+	f << "\\hypersetup{\n"
+	f << "pdftitle = {#{metadata["title"]}},\n"
+	f << "pdfsubject = {JuliaCon 2019 Proceedings},\n"
+	author_list = metadata['authors'].map { |a| a['name'] }.join(', ')
+	f << "pdfauthor = {#{author_list}},\n"
+	keyword_list = metadata['keywords'].join(', ')
+	f << "pdfkeywords = {#{keyword_list}},\n"
+	f << "}\n\n"
 end
 
 open('journal_dat.tex', 'w') do |f|
