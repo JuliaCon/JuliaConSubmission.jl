@@ -698,9 +698,11 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 %
 \def\@maketitle{\newpage \thispagestyle{titlepage}\par
  \begingroup \lineskip = \z@\null
+ \vspace{-1.75em}
  \begin{picture}(5,5)
 	\includegraphics[width=1in]{logojuliacon.pdf}
  \end{picture}
+ \vspace{1.75em}
  \vskip -7pt\relax %-18.5pt
  \parindent\z@ \LARGE {\centering \hyphenpenalty\@M
   {\titlefont \@title} \par
@@ -727,21 +729,22 @@ to\hsize{\if@nfeven\else\hfil\fi\box\@tempboxa\if@nfeven\hfil\fi}
 \newbox\@terms
 \newbox\@keywords
 
+
 %
 \newenvironment{abstract}
-	       {\section*{ABSTRACT}\par\fontsize{10}{12}\indent\ignorespaces}
-	       {
-		   { \ifvoid\@terms\else\box\@terms\fi
- \@keywords \@juliaconformat\empty}\vskip6pt}
+{\section*{ABSTRACT}\par\fontsize{10}{12}\indent\ignorespaces}
+{
+	{ \ifvoid\@terms\else\box\@terms\fi
+		\@keywords \@juliaconformat\empty}\vskip6pt}
 %
 \def\terms#1{\setbox\@terms=\vbox{\hsize20pc%
- \footnotesize%
-\parindent 0pt \noindent
- { \section*{General Terms}} \ignorespaces #1}}
+		\footnotesize%
+		\parindent 0pt \noindent
+		{ \section*{General Terms}} \ignorespaces #1{\vspace{-0.75em}}}}
 \def\keywords#1{\gdef\@keywords{\hsize20pc%
-\parindent 0pt\noindent\ignorespaces%
- { \section*{Keywords} } \ignorespaces #1}
-}
+		\parindent 0pt\noindent\ignorespaces%
+		{{\vspace{-0.75em}} \section*{Keywords}} \ignorespaces #1{\vspace{1em}}}}
+%}
 
 \def\category#1#2#3{\@ifnextchar
  [{\@category{#1}{#2}{#3}}{\@xcategory{#1}{#2}{#3}}}
