@@ -2,7 +2,7 @@
 
 This repository is an example for a proceeding submission at JuliaCon.
 Feel free to use the template in `/paper` to prepare yours.
-For more information, go to the [proceedings website](https://proceedings.juliacon.org).
+For more information, check out the [author's guide](https://juliacon.github.io/proceedings-guide/author/) and [proceedings.juliacon.org](http://proceedings.juliacon.org).
 
 ## Importing into your project
 
