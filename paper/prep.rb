@@ -12,7 +12,7 @@ end
 # ENV variables or default for issue/volume/year
 issue = ENV["JLCON_ISSUE"] === nil ? 1 : ENV["JLCON_ISSUE"]
 volume = ENV["JLCON_VOLUME"] === nil ? 1 : ENV["JLCON_VOLUME"]
-year = ENV["JLCON_YEAR"] === nil ? 2020 : ENV["JLCON_YEAR"]
+year = ENV["JLCON_YEAR"] === nil ? 2021 : ENV["JLCON_YEAR"]
 journal_name = "Proceedings of JuliaCon" # hard-coded for now
 
 open('header.tex', 'w') do |f|
