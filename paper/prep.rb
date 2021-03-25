@@ -16,11 +16,6 @@ year = ENV["JLCON_YEAR"] === nil ? 2021 : ENV["JLCON_YEAR"]
 draft = ENV["JLCON_DRAFT"] === nil ? true : ENV["JLCON_DRAFT"] == "true"
 journal_name = "Proceedings of JuliaCon" # hard-coded for now
 
-print "DRAFT #{draft}\n"
-print "ENVKEY: "
-print ENV["JLCON_DRAFT"]
-print ENV["$JLCON_DRAFT"]
-
 open('header.tex', 'w') do |f|
   f << "% **************GENERATED FILE, DO NOT EDIT**************\n\n"
   f << "\\title{#{metadata["title"]}}\n\n"
