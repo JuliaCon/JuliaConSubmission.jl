@@ -13,7 +13,13 @@ end
 issue = ENV["JLCON_ISSUE"] === nil ? 1 : ENV["JLCON_ISSUE"]
 volume = ENV["JLCON_VOLUME"] === nil ? 1 : ENV["JLCON_VOLUME"]
 year = ENV["JLCON_YEAR"] === nil ? 2021 : ENV["JLCON_YEAR"]
+draft = ENV["JLCON_DRAFT"] === nil ? true : ENV["JLCON_DRAFT"] == "true"
 journal_name = "Proceedings of JuliaCon" # hard-coded for now
+
+print "DRAFT #{draft}\n"
+print "ENVKEY: "
+print ENV["JLCON_DRAFT"]
+print ENV["$JLCON_DRAFT"]
 
 open('header.tex', 'w') do |f|
   f << "% **************GENERATED FILE, DO NOT EDIT**************\n\n"
@@ -40,6 +46,11 @@ open('header.tex', 'w') do |f|
 	keyword_list = metadata['keywords'].join(', ')
 	f << "pdfkeywords = {#{keyword_list}},\n"
 	f << "}\n\n"
+
+	# draft mode
+	if draft
+	  f << "\\usepackage{draftwatermark}\n\n"
+	end
 end
 
 open('journal_dat.tex', 'w') do |f|
