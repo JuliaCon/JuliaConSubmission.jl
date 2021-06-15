@@ -12,7 +12,7 @@
 \begin{abstract}
 
 This is a guide for authors who are preparing papers for JuliaCon using the \LaTeX{} document
-preparation system and the \verb juliacon  class file.
+preparation system and the \verb|juliacon|  class file.
 
 \end{abstract}
 
@@ -51,40 +51,40 @@ It is likely that the make up will change after file submission. For
 this reason, we ask you to ignore details such as slightly long lines,
 page stretching, or figures falling out of synchronization, as these
 details can be dealt with at a later stage.\vskip 6pt
-Use should be made of symbolic references (\verb \ref ) in order to
+Use should be made of symbolic references (\verb|\ref| ) in order to
 protect against late changes of order, etc.
 
 \section{USING THE JuliaCon Article CLASS FILE}
 
-If the file \verb juliacon.cls  is not already in the appropriate system directory
+If the file \verb|juliacon.cls|  is not already in the appropriate system directory
 for \LaTeX{} files, either arrange for it to be put there or copy
-it to your working directory. The \verb juliacon  document class is implemented
+it to your working directory. The \verb|juliacon|  document class is implemented
 as a complete class, not a document style option. In order to
-use the \verb juliacon  document class, replace \verb article  by \verb juliacon  in the
-\verb \documentclass  command at the beginning of your document:
+use the \verb|juliacon  document class, replace \verb|article|  by \verb|juliacon|  in the
+\verb|\documentclass|  command at the beginning of your document:
 \vskip 6pt
 \begin{centering}
-    \verb \documentclass{article}  \end{centering}
+    \verb|\documentclass{article}|  \end{centering}
 \vskip 6pt
 replace by
 \vskip 6pt
- \verb \documentclass{juliacon}  \vskip 6pt
-In general, the following standard document \verb style  options should
+ \verb|\documentclass{juliacon}|  \vskip 6pt
+In general, the following standard document \verb|style|  options should
 { \itshape not} be used with the {\footnotesize \itshape article} class file:
 \begin{enumerate}
-\item[(1)] \verb 10pt,  \verb 11pt,  \verb 12pt   ? unavailable;
-\item[(2)] \verb twoside  (no associated style file) ? \verb twoside  is the default;
-\item[(3)] \verb fleqn, \verb leqno, \verb titlepage ? should not be used;
+\item[(1)] \verb|10pt|,  \verb|11pt|,  \verb|12pt|   ? unavailable;
+\item[(2)] \verb|twoside|  (no associated style file) ? \verb|twoside|  is the default;
+\item[(3)] \verb|fleqn|, \verb|leqno|, \verb|titlepage| ? should not be used;
 \end{enumerate}
 
 \section{Additional Document Style Options}
 \label{sec:additional_doc}
 %
-The following additional style option is available with the \verb juliacon  class file:
+The following additional style option is available with the \verb|juliacon|  class file:
 \vskip 6pt
 Please place any additional command definitions at the very start of
-the \LaTeX{} file, before the \verb \begin{document} . For example, user-defined
-\verb \def  and \verb \newcommand   commands that define macros for
+the \LaTeX{} file, before the \verb|\begin{document}|. For example, user-defined
+\verb|\def|  and \verb|\newcommand|   commands that define macros for
 technical expressions should be placed here. Other author-defined
 macros should be kept to a minimum.
 \vskip 6pt
@@ -92,7 +92,7 @@ Commands that differ from the standard \LaTeX{} interface, or that
 are provided in addition to the standard interface, are explained in
 this guide. This guide is not a substitute for the \LaTeX{} manual itself.
 Authors planning to submit their papers in \LaTeX{} are advised to use
-\verb \juliacon.cls  as early as possible in the creation of their files.
+\verb|juliacon.cls|  as early as possible in the creation of their files.
 
 %
 %
@@ -125,8 +125,8 @@ This is an example of table footnote.
 
 \section{Additional features}
 \label{sec:additional_faci}
-In addition to all the standard \LaTeX{} design elements, the \verb juliacon  class file includes the following features:
-In general, once you have used the additional \verb juliacon.cls facilities
+In addition to all the standard \LaTeX{} design elements, the \verb|juliacon|  class file includes the following features:
+In general, once you have used the additional \verb|juliacon.cls| facilities
 in your document, do not process it with a standard \LaTeX{} class
 file.
 
@@ -187,9 +187,9 @@ plot(x, y)
 \label{subsub:abs_key_etc}
 
 At the beginning of your article, the title should be generated
-in the usual way using the \verb \maketitle  command. For genaral tem and keywords use
-\verb \terms ,
-\verb \keywords  commands respectively. The abstract should be enclosed
+in the usual way using the \verb|\maketitle|  command. For genaral tem and keywords use
+\verb|\terms|,
+\verb|\keywords|  commands respectively. The abstract should be enclosed
 within an abstract environment, All these environment
 can be produced using the following code:
 \begin{verbatim}
@@ -221,20 +221,24 @@ simulation.
 \section{Some guidelines}
 \label{sec:some_guide}
 The following notes may help you achieve the best effects with the
-\verb juliacon  class file.
+\verb|juliacon|  class file.
 
 \subsection{Sections}
 \label{subsub:sections}
 \LaTeXe{}  provides four levels of section headings and they are all
-defined in the \verb juliacon  class file:
+defined in the \verb|juliacon|  class file:
 \begin{itemize}
-\item \verb \section   \item \verb \subsection  \item \verb \subsubsection  \item \verb \paragraph  \end{itemize}
+\item \verb|\section|
+\item \verb|\subsection|
+\item \verb|\subsubsection|
+\item \verb|\paragraph|
+\end{itemize}
 Section headings are automatically converted to allcaps style.
 \subsection{Lists}
 \label{sec:lists}
 %
-The \verb juliacon   class file provides unnumbered lists using the
-\verb unnumlist  environment for example,
+The \verb|juliacon|   class file provides unnumbered lists using the
+\verb|unnumlist|  environment for example,
 
 \begin{unnumlist}
 \item First unnumbered item which has no label and is indented from the
@@ -252,8 +256,8 @@ left margin. was produced by:
 \end{unnumlist}
 \end{verbatim}
 
-The \verb juliacon   class file also provides hyphen list using the
-\verb itemize  environment for example,
+The \verb|juliacon|  class file also provides hyphen list using the
+\verb|itemize|  environment for example,
 \begin{itemize}
 \item First unnumbered bulleted item which has no label and is indented
 from the left margin.
@@ -288,9 +292,9 @@ was produced by:
 \end{verbatim}
 \subsection{Illustrations (or figures)}
 \label{subsub:sec_Illus}
-The \verb juliacon   class file will cope with most of the positioning of
+The \verb|juliacon|  class file will cope with most of the positioning of
 your illustrations and you should not normally use the optional positional
-qualifiers on the \verb figure   environment that would override
+qualifiers on the \verb|figure|  environment that would override
 these decisions.
 \vskip 6pt
 
@@ -305,7 +309,7 @@ The figure \ref{fig:sample_figure} is taken from the JuliaGraphs
 organization \footnote{https://github.com/JuliaGraphs}.
 
 Figure captions should be \emph{below} the figure itself, therefore the
-\verb \caption  command should appear after the figure or space left for
+\verb|\caption|  command should appear after the figure or space left for
 an illustration. For example, Figure 1 is produced using the following
 commands:
 
@@ -323,16 +327,18 @@ expect at first.}
 \end{figure}
 \end{verbatim}
 Figures can be resized using first and second argument of
-\verb \includegraphics   command. First argument is used for modifying
+\verb|\includegraphics|   command. First argument is used for modifying
 figure height and the second argument is used for modifying
 figure width respectively.
 \vskip 6pt
 Cross-referencing of figures, tables, and numbered, displayed
-equations using the \verb \label  and \verb \ref   commands is encouraged.
+equations using the \verb|\label|  and \verb|\ref|   commands is encouraged.
 For example, in referencing Figure 1 above, we used
-\verb Figure~\ref{sample-figure}   \subsection{Tables}
+\verb|Figure~\ref{sample-figure}|
+
+ \subsection{Tables}
 \label{subsub:sec_Tab}
-The \verb juliacon   class file will cope with most of the positioning of
+The \verb|juliacon|   class file will cope with most of the positioning of
 your tables and you should not normally use the optional positional qualifiers on the table environment which would override these
 decisions. Table captions should be at the top.
 \begin{verbatim}
@@ -349,7 +355,8 @@ Test70 & Testing Data I & & 105\\\hline
 Test30 & Testing Data II & 30 & 119\\\hline
 & Total & 100 & 328\\\hline
 \end{tabular}}
-\end{table}\end{verbatim}
+\end{table}
+\end{verbatim}
 
 \begin{table}
 \tbl{Tuning Set and Testing Set}{
@@ -369,11 +376,11 @@ Test 3 & Testing Data II & 30 & 119\\\hline
 \label{subsub:landscaping_pages}
 If a table is too wide to fit the standard measure, it may be turned,
 with its caption, to 90 degrees. Landscape tables cannot be produced
-directly using the \verb juliacon   class file because \TeX{} itself cannot
+directly using the \verb|juliacon|   class file because \TeX{} itself cannot
 turn the page, and not all device drivers provide such a facility.
 The following procedure can be used to produce such pages.
 \vskip 6pt
-Use the package \verb rotating   in your document and change the coding
+Use the package \verb|rotating|   in your document and change the coding
 from
 \begin{verbatim}
 \begin{table}...\end{table}
@@ -422,7 +429,7 @@ we can use the following coding:
 
 \subsection{Typesetting Mathematics}
 \label{subsub:type_math}
-The \verb juliacon class file will set displayed mathematics with center to
+The \verb|juliacon| class file will set displayed mathematics with center to
 the column width, provided that you use the \LaTeXe{} standard of
 open and closed square brackets as delimiters.
 The equation
@@ -458,7 +465,7 @@ sample variance.
 
 \subsection{Enunciations}
 \label{subsub:enunciation}
-The \verb juliacon   class file generates the enunciations with the help of
+The \verb|juliacon|   class file generates the enunciations with the help of
 the following commands:
 \begin{verbatim}
 \begin{theorem}...\end{theorem}
