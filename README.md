@@ -20,7 +20,7 @@ The document can be built locally, the following dependencies need to be install
 
 Build the paper using:
 ```
-$ latexmk -bibtex -pdf paper.tex
+$ latexmk paper.tex
 ```
 
 Clean up temporary files using:
