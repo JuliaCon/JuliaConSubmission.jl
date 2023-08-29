@@ -166,7 +166,12 @@ A special environment is already defined for Julia code,
 built on top of \textit{listings} and \textit{jlcode}.
 
 \begin{verbatim}
-\begin{lstlisting}[language = Julia]
+\begin{lstlisting}[
+    language = Julia, 
+    numbers=left, 
+    label={lst:exmplg}, 
+    caption={Example Code Block.}
+]
 using Plots
 
 x = -3.0:0.01:3.0
@@ -174,7 +179,12 @@ y = rand(length(x))
 plot(x, y)
 \end{lstlisting}
 \end{verbatim}
-\begin{lstlisting}[language = Julia]
+\begin{lstlisting}[
+    language = Julia, 
+    numbers=left, 
+    label={lst:exmplg}, 
+    caption={Example Code Block.}
+]
 using Plots
 
 x = -3.0:0.01:3.0
